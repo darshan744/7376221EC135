@@ -2,7 +2,7 @@ import express from "express";
 import axios from "axios";
 import dotenv from 'dotenv'
 dotenv.config();
-const API_URL = 'http://20.244.56.144/test'
+const API_URL = process.env.API_URL
 const port = process.env.PORT;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 const tokenStrig = `Bearer ${ACCESS_TOKEN}`
